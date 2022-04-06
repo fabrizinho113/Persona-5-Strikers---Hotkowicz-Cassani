@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* LOGO Y NAV */
+.logo {
+    width: 100px;
+}
+
+ul {
+    font-family: 'Smooch Sans';
+    font-size: 40px;
+}
+
+ul li {
+    padding: 5px;
+}
+
+/* HEADER Y VIDEO */
+header {
+    position: relative;
+    background-color: black;
+    height: 80vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+
+/* SECCIONES Y IMAGENES*/
+
+.titulo{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(80, 80, 80);
+    font-size: 60px;
+}
+
+.rojo{
+    color: red;
+}
+
+.seccion {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url('../assets/img/background-rojo.jpg');
+    background-size: cover;
+}
+
+.seccion-1 {
+    color: white;
+    font-family: 'Smooch Sans';
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.home-1{
+    width: 700px;
+    height: 500px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------characters.html--------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.fondo {
+    background-color: black;
+}
+
+.characters-header{
+    height: 50vh;
+    background-image: url('../assets/img/characters-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#personajes {
+    margin-top: 20rem;
+}
+
+
+#myCarousel {
+    height: 100%;
+    width: 100%;
+}
+  
+.carousel-indicators {
+    margin-bottom: 8px;
+}
+  
+.carousel-indicators>li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+  
+.carousel-inner {
+    height: 100%;
+}
+  
+.carousel-item {
+    text-align: center;
+}
+  
+.parent {
+    min-height: 200px;
+}
+  
+.carousel-item img {
+    display: block;
+    margin: auto;
+}
+.carousel-inner img{
+    width: 200px;
+    height: 200px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;/*put your desired width*/
+    margin-top: 80px;/*put your desired top margin*/
+}
+
+
+.characters {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(80, 80, 80);
+    font-size: 60px;
+}
+
+#section-1{
+    margin-top: 10rem;
+}
+
+.descripcion {
+    color: white;
+}
