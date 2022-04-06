@@ -22,6 +22,8 @@ ul li {
     padding: 5px;
 }
 
+
+
 /* HEADER Y VIDEO */
 header {
     position: relative;
@@ -51,6 +53,7 @@ header video {
 /* SECCIONES Y IMAGENES*/
 
 .titulo{
+    font-family: 'Smooch Sans';
     color: white;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px rgb(80, 80, 80);
@@ -109,15 +112,6 @@ header video {
     width: 100%;
 }
   
-.carousel-indicators {
-    margin-bottom: 8px;
-}
-  
-.carousel-indicators>li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
   
 .carousel-inner {
     height: 100%;
@@ -130,27 +124,33 @@ header video {
 .parent {
     min-height: 200px;
 }
-  
-.carousel-item img {
-    display: block;
-    margin: auto;
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
 }
-.carousel-inner img{
-    width: 200px;
-    height: 200px;
-}
+
 
 .carousel-control-prev, .carousel-control-next {
     width: 5%;/*put your desired width*/
     margin-top: 80px;/*put your desired top margin*/
 }
 
+.imagen {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .characters {
+    font-family: 'Smooch Sans';
     text-transform: uppercase;
     color: white;
     text-shadow: 2px 2px 2px rgb(80, 80, 80);
-    font-size: 60px;
+    font-size: 140px;
 }
 
 #section-1{
