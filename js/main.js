@@ -59,6 +59,3 @@ function Wolf(){
     document.getElementById("codename").textContent = "Codename: Wolf"
 }
 
-
-/* Media.html */
-
