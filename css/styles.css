@@ -230,7 +230,11 @@ header video {
     background-position: center center;
 }
 
-.a,.b,.c,.d,.e {
+.a,
+.b,
+.c,
+.d,
+.e {
     font-family: 'Smooch Sans';
     padding: 10px 40px;
     color: white;
