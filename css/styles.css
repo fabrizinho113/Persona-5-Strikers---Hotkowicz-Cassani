@@ -242,6 +242,13 @@ header video {
     font-weight: bold;
 }
 
+.buy button{
+    font-family: 'Smooch Sans';
+    padding: 10px 40px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
 
 .version {
     color: white;
