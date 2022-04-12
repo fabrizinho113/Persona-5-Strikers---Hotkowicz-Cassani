@@ -3,6 +3,7 @@ $title-font: normal 60px 'Smooch Sans';
 $title-shadow: 2px 2px 2px rgb(80, 80, 80);
 $color-white: white;
 $color-red: red;
+$color-black: black;
 
 *{
     box-sizing: border-box;
@@ -12,6 +13,10 @@ $color-red: red;
 
 html{
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-black;
 }
 
 /* HEADER, LOGO Y NAV (index.html)*/
@@ -119,7 +124,6 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------*/
 
 .fondo-characters{
-    background-color: black;
 
     .characters-header{
         height: 50vh;
