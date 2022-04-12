@@ -1,0 +1,371 @@
+$logo: 100px;
+$title-font: normal 60px 'Smooch Sans';
+$title-shadow: 2px 2px 2px rgb(80, 80, 80);
+$color-white: white;
+$color-red: red;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER, LOGO Y NAV (index.html)*/
+
+header {
+    position: relative;
+    background-color: black;
+    height: 80vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .logo {
+        width: $logo;
+    }
+
+    ul {
+        font-family: 'Smooch Sans';
+        font-size: 40px;
+
+        li {
+            padding: 5px;
+        }
+
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .scroll {
+        background-color: #ffcd0d;
+    }
+    
+}
+
+
+
+/* SECCIONES Y IMAGENES (index.html) */
+
+
+.seccion {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url('../assets/img/background-rojo.jpg');
+    background-size: cover;
+
+
+    .titulo{
+        font: $title-font;
+        color: $color-white;
+        box-shadow: $title-shadow;
+        text-transform: uppercase;
+    }
+
+    .rojo{
+        color: $color-red;
+    }
+    
+    .seccion-1 {
+        color: $color-white;
+        font-family: 'Smooch Sans';
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .seccion-1 {
+        color: $color-white;
+        font-family: 'Smooch Sans';
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .home-1{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------characters.html--------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.fondo-characters{
+    background-color: black;
+
+    .characters-header{
+        height: 50vh;
+        background-image: url('../assets/img/characters-banner.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #personajes {
+        margin-top: 20rem;
+    }
+
+    #myCarousel {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+      
+    .carousel-item {
+        text-align: center;
+    }
+      
+    .parent {
+        min-height: 200px;
+    }
+    
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+    }
+    
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 5%;/*put your desired width*/
+        margin-top: 80px;/*put your desired top margin*/
+    }
+
+    .characters {
+        font-family: 'Smooch Sans';
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(80, 80, 80);
+        font-size: 140px;
+    }
+    
+    #section-1{
+        margin-top: 10rem;
+    }
+    
+    .descripcion {
+        color: white;
+    }
+    
+    .card-img-top{
+        width:100%;
+        height:auto;
+    }
+    
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------media.html-------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+
+.fondo-media{
+    background-color: black;
+
+    .media-header {
+        background-color: black;
+        height: 20vh;
+    }
+
+    .imagen-media {
+        padding: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 900px;
+        }
+    }
+
+
+    .thumbnail {
+        margin-bottom: 80px;
+
+        li{
+            height: 0px;
+
+            img {
+                height: 0px;
+            }
+        }
+    }
+
+    .videoGameplay {
+        width: 33%;
+        padding: 20px;
+    }
+
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------store.html-------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.fondo-store{
+    background-color: black;
+
+    .tabla{ 
+        background-color: #ffcd0d; 
+    }
+
+    .plataform {
+        margin-bottom: 300px;
+    }
+
+    .fondoStore{
+        background-image: url(../assets/img/purchase_bg.jpg);
+        background-position: center center;
+    }
+
+    .a,
+    .b,
+    .c,
+    .d,
+    .e {
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+    }
+
+    .buy button{
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: red;
+        font-weight: bold;
+    }
+
+    .version {
+        color: white;
+        font-family: 'Smooch Sans';
+        font-size: 60px;
+    }
+
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------contact.html-----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.fondo-contact {
+    background-color: black;
+
+    #contacto {
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+
+        input{
+            width: 100%;
+        }
+
+
+    }
+
+    #studio{
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+    }
+
+    .responsive-map-container {
+        position: relative;
+        margin-top: 40px;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+
+        iframe, 
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------media queries----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px){
+    #nav {
+        background-color: #ffcd0d;
+    }
+
+    .version {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper div:first-child{
+            order: 1;
+        }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #section-1 .characters {
+        font-size: 65px;
+    }
+}
