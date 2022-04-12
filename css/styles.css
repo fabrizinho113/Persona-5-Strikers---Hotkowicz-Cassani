@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth; }
 
+body {
+  background-color: black; }
+
 /* HEADER, LOGO Y NAV (index.html)*/
 header {
   position: relative;
@@ -70,48 +73,57 @@ header {
 /*-------------------------------characters.html--------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
-.fondo-characters {
-  background-color: black; }
-  .fondo-characters .characters-header {
-    height: 50vh;
-    background-image: url("../assets/img/characters-banner.jpg");
-    background-size: cover;
-    background-position: center center; }
-  .fondo-characters #personajes {
-    margin-top: 20rem; }
-  .fondo-characters #myCarousel {
-    height: 100%;
-    width: 100%; }
-  .fondo-characters .carousel-inner {
-    height: 100%; }
-  .fondo-characters .carousel-item {
-    text-align: center; }
-  .fondo-characters .parent {
-    min-height: 200px; }
-  .fondo-characters .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px; }
-  .fondo-characters .carousel-control-prev, .fondo-characters .carousel-control-next {
-    width: 5%;
-    /*put your desired width*/
-    margin-top: 80px;
-    /*put your desired top margin*/ }
-  .fondo-characters .characters {
-    font-family: 'Smooch Sans';
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 2px 2px 2px #505050;
-    font-size: 140px; }
-  .fondo-characters #section-1 {
-    margin-top: 10rem; }
-  .fondo-characters .descripcion {
-    color: white; }
-  .fondo-characters .card-img-top {
-    width: 100%;
-    height: auto; }
+.fondo-characters .characters-header {
+  height: 50vh;
+  background-image: url("../assets/img/characters-banner.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.fondo-characters #personajes {
+  margin-top: 20rem; }
+
+.fondo-characters #myCarousel {
+  height: 100%;
+  width: 100%; }
+
+.fondo-characters .carousel-inner {
+  height: 100%; }
+
+.fondo-characters .carousel-item {
+  text-align: center; }
+
+.fondo-characters .parent {
+  min-height: 200px; }
+
+.fondo-characters .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; }
+
+.fondo-characters .carousel-control-prev, .fondo-characters .carousel-control-next {
+  width: 5%;
+  /*put your desired width*/
+  margin-top: 80px;
+  /*put your desired top margin*/ }
+
+.fondo-characters .characters {
+  font-family: 'Smooch Sans';
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px #505050;
+  font-size: 140px; }
+
+.fondo-characters #section-1 {
+  margin-top: 10rem; }
+
+.fondo-characters .descripcion {
+  color: white; }
+
+.fondo-characters .card-img-top {
+  width: 100%;
+  height: auto; }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------media.html-------------------------------------------------------------------------------*/
