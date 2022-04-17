@@ -9,7 +9,7 @@ html {
 body {
   background-color: black; }
 
-/* HEADER, LOGO Y NAV (index.html)*/
+/* LOGO Y NAV */
 header {
   position: relative;
   background-color: black;
@@ -35,39 +35,45 @@ header {
   header ul {
     font-family: 'Smooch Sans';
     font-size: 40px; }
-    header ul li {
-      padding: 5px; }
+  header ul li {
+    padding: 5px; }
   header img {
     display: block;
     max-width: 100%;
     height: auto; }
+  header .nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    transition: all .5s ease-in-out; }
   header .scroll {
     background-color: #ffcd0d; }
 
-/* SECCIONES Y IMAGENES (index.html) */
+/* SECCIONES Y IMAGENES*/
+.titulo {
+  font-family: 'Smooch Sans';
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #505050;
+  font-size: 60px; }
+
+.rojo {
+  color: red; }
+
 .seccion {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/background-rojo.jpg");
   background-size: cover; }
-  .seccion .titulo {
-    font: normal 60px "Smooch Sans";
-    color: white;
-    box-shadow: 2px 2px 2px #505050;
-    text-transform: uppercase; }
-  .seccion .rojo {
-    color: red; }
-  .seccion .seccion-1 {
-    color: white;
-    font-family: 'Smooch Sans';
-    font-size: 20px;
-    margin-top: 0px; }
-  .seccion .seccion-1 {
-    color: white;
-    font-family: 'Smooch Sans';
-    font-size: 20px;
-    margin-top: 0px; }
-  .seccion .home-1 {
-    width: 100%;
-    height: auto; }
+
+.seccion-1 {
+  color: white;
+  font-family: 'Smooch Sans';
+  font-size: 20px;
+  margin-top: 0px; }
+
+.home-1 {
+  width: 100%;
+  height: auto; }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------characters.html--------------------------------------------------------------------------*/
@@ -85,28 +91,23 @@ header {
 #myCarousel {
   height: 100%;
   width: 100%; }
-
-.carousel-inner {
-  height: 100%; }
-
-.carousel-item {
-  text-align: center; }
-
-.parent {
-  min-height: 200px; }
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500px; }
-
-.carousel-control-prev, .carousel-control-next {
-  width: 5%;
-  /*put your desired width*/
-  margin-top: 80px;
-  /*put your desired top margin*/ }
+  #myCarousel .carousel-inner {
+    height: 100%; }
+  #myCarousel .carousel-item {
+    text-align: center; }
+  #myCarousel .parent {
+    min-height: 200px; }
+  #myCarousel .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px; }
+  #myCarousel .carousel-control-prev, #myCarousel .carousel-control-next {
+    width: 5%;
+    /*put your desired width*/
+    margin-top: 80px;
+    /*put your desired top margin*/ }
 
 .characters {
   font-family: 'Smooch Sans';
@@ -117,44 +118,35 @@ header {
 
 #section-1 {
   margin-top: 10rem; }
-
-.descripcion {
-  color: white; }
+  #section-1 .descripcion {
+    color: white; }
 
 .card-img-top {
   width: 100%;
   height: auto; }
 
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------media.html-------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
 .media-header {
   background-color: black;
   height: 20vh; }
 
 .imagen-media {
   padding: 100px; }
-  .imagen-media img {
-    width: 100%;
-    height: auto;
-    max-height: 900px; }
+
+.imagen-media img {
+  width: 100%;
+  height: auto;
+  max-height: 900px; }
 
 .thumbnail {
   margin-bottom: 80px; }
-  .thumbnail li {
-    height: 0px; }
-    .thumbnail li img {
-      height: 0px; }
+
+.thumbnail li img {
+  height: 0px; }
 
 .videoGameplay {
   width: 33%;
   padding: 20px; }
 
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------store.html-------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
 .tabla {
   background-color: #ffcd0d; }
 
@@ -164,34 +156,27 @@ header {
 .fondoStore {
   background-image: url(../assets/img/purchase_bg.jpg);
   background-position: center center; }
+  .fondoStore .a,
+  .fondoStore .b,
+  .fondoStore .c,
+  .fondoStore .d,
+  .fondoStore .e {
+    font-family: 'Smooch Sans';
+    padding: 10px 40px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold; }
+  .fondoStore .buy button {
+    font-family: 'Smooch Sans';
+    padding: 10px 40px;
+    color: white;
+    background-color: red;
+    font-weight: bold; }
+  .fondoStore .version {
+    color: white;
+    font-family: 'Smooch Sans';
+    font-size: 60px; }
 
-.a,
-.b,
-.c,
-.d,
-.e {
-  font-family: 'Smooch Sans';
-  padding: 10px 40px;
-  color: white;
-  background-color: transparent;
-  font-weight: bold; }
-
-.buy button {
-  font-family: 'Smooch Sans';
-  padding: 10px 40px;
-  color: white;
-  background-color: red;
-  font-weight: bold; }
-
-.version {
-  color: white;
-  font-family: 'Smooch Sans';
-  font-size: 60px; }
-
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------contact.html-----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
 #contacto {
   font-family: 'Smooch Sans';
   padding: 10px 40px;
@@ -207,6 +192,21 @@ header {
   color: white;
   background-color: transparent;
   font-weight: bold; }
+  #studio .responsive-map-container {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+    #studio .responsive-map-container iframe,
+    #studio .responsive-map-container object,
+    #studio .responsive-map-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 .responsive-map-container {
   position: relative;
@@ -215,19 +215,16 @@ header {
   padding-top: 30px;
   height: 0;
   overflow: hidden; }
-  .responsive-map-container iframe,
-  .responsive-map-container object,
-  .responsive-map-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
 
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------media queries----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------*/
+.responsive-map-container iframe,
+.responsive-map-container object,
+.responsive-map-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 @media only screen and (max-width: 767px) {
   #nav {
     background-color: #ffcd0d; }
@@ -241,6 +238,6 @@ header {
   .wrapper div:first-child {
     order: 1; } }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   #section-1 .characters {
     font-size: 65px; } }

@@ -1,0 +1,35 @@
+/* SECCIONES Y IMAGENES*/
+
+.titulo{
+    font-family: 'Smooch Sans';
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(80, 80, 80);
+    font-size: 60px;
+}
+
+.rojo{
+    color: red;
+}
+
+.seccion {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url('../assets/img/background-rojo.jpg');
+    background-size: cover;
+}
+
+.seccion-1 {
+    color: white;
+    font-family: 'Smooch Sans';
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.home-1{
+    width: 100%;
+    height: auto;
+}

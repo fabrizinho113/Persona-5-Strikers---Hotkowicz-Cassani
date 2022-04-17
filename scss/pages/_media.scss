@@ -1,0 +1,27 @@
+.media-header {
+    background-color: black;
+    height: 20vh;
+}
+
+.imagen-media {
+    padding: 100px;
+}
+
+.imagen-media img{
+    width: 100%;
+    height: auto;
+    max-height: 900px;
+}
+
+.thumbnail {
+    margin-bottom: 80px;
+}
+
+.thumbnail li img {
+    height: 0px;
+}
+
+.videoGameplay {
+    width: 33%;
+    padding: 20px;
+}

@@ -1,0 +1,41 @@
+.tabla{ 
+    background-color: #ffcd0d; 
+}
+
+.plataform {
+    margin-bottom: 300px;
+}
+
+.fondoStore{
+    background-image: url(../assets/img/purchase_bg.jpg);
+    background-position: center center;
+
+    .a,
+    .b,
+    .c,
+    .d,
+    .e {
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+    }
+
+    .buy button{
+        font-family: 'Smooch Sans';
+        padding: 10px 40px;
+        color: white;
+        background-color: red;
+        font-weight: bold;
+    }
+
+    .version {
+        color: white;
+        font-family: 'Smooch Sans';
+        font-size: 60px;
+    }
+
+    
+}
+
