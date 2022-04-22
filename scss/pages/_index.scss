@@ -1,16 +1,22 @@
-/* SECCIONES Y IMAGENES*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------Index.html-------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
 
-.titulo{
-    font-family: 'Smooch Sans';
-    color: white;
+@import "components/variables";
+
+.titulo {
+    font-family: map-get($fuente, Fuente);
+    color: map-get($colores, blanco);
     text-transform: uppercase;
     text-shadow: 2px 2px 2px rgb(80, 80, 80);
-    font-size: 60px;
+    font-size: map-get($titulo, tFuente);
 }
 
 .rojo{
-    color: red;
+    color: map-get($colores, rojo);
 }
+
 
 .seccion {
     background-image: linear-gradient(
@@ -20,16 +26,39 @@
     )
     ,url('../assets/img/background-rojo.jpg');
     background-size: cover;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.seccion-1 {
-    color: white;
-    font-family: 'Smooch Sans';
+.seccion-2 {
+    @extend .seccion-descripcion;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url('../assets/img/Body P5.jpg');
+}
+
+.seccion-3 {
+    @extend .seccion-descripcion;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url('../assets/img/background-home.jpg');
+}
+
+.seccion-descripcion {
+    color: map-get($colores, rojo);
+    font-family: map-get($fuente, Fuente);
     font-size: 20px;
     margin-top: 0px;
 }
 
-.home-1{
-    width: 100%;
-    height: auto;
-}
+
+

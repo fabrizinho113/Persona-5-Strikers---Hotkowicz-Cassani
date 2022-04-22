@@ -1,9 +1,175 @@
-@media only screen and (max-width: 767px){
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 576px){
+        .footer{
+            padding: 10px;
+
+            img{
+                padding: 10px;
+            }
+        }
+
+        .characters {
+            font-size: 80px;
+        }
+
+        #section-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .child{
+                margin: 20px 20px;
+            }
+
+            #codename {
+                font-size: 40px;
+            }
+
+            #descripcion {
+                font-size: 12px;
+            }
+
+        }
+    
+        .media-bg {
+
+            .imagen-media {
+                padding: 30px;
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                    max-height: 350px;
+                }
+            }
+            
+            .thumbnail {
+                margin-bottom: 0px;
+            }
+
+
+            .videos{
+                @include flex-column-center;
+
+                .videoGameplay {
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+            
+            .spotify {
+                @include flex-column-center;
+
+                iframe {
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+        }
+
+
+        
+        
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
     #nav {
         background-color: #ffcd0d;
+
+        li a{
+            color: black;
+            font-size: 25px;
+        }
+    }
+
+    .video {
+        display: none;
+    }
+
+    header {
+        background: url('../assets/img/Mobile.png');
+        background-size: cover;
     }
 
     .version {
+        font-size: 30px;
+    }
+
+    #section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #codename {
+            font-size: 50px;
+        }
+
+        #descripcion {
+            font-size: 10px;
+        }
+        
+        .child{
+            margin: 5px 0px;
+            padding: 5px;
+        }
+    }
+
+    .media-bg {
+
+        .imagen-media {
+            padding: 30px;
+
+            img{
+                width: 100%;
+                height: auto;
+                max-height: 350px;
+            }
+        }
+        
+        .thumbnail {
+            margin-bottom: 0px;
+        }
+
+
+        .videos{
+            @include flex-column-center;
+            transform: translateX(1%);
+            .videoGameplay {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        
+        .spotify {
+            @include flex-column-center;
+
+            iframe {
+                width: 500px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1000px){
+    .videos{
+        @include flex-column-center;
+        margin-left: 140px;
+        .videoGameplay {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1100px){
+    #nav li{
         font-size: 30px;
     }
 }

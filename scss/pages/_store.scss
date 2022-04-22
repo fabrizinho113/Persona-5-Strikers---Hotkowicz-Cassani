@@ -1,5 +1,16 @@
+.store-header{
+    background-image: url(../assets/img/store-banner.jpg);
+    background-position: center center;
+    height: 40vh;
+}
+
 .tabla{ 
     background-color: #ffcd0d; 
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .plataform {
