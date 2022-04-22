@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../assets/img/Logo Pagina.png">
   <title>Persona 5 Strikers</title>
+  <!--Keywords-->
+  <meta name="keywords" content="persona, persona 5, atlus, ps4, steam, nintendo, games, persona saga, strikers, playstation 4">
+  <!-- Descripcion -->
+  <meta name="description" content="Check out which characters returns from the Phantom Thieves and also which ones will join them on this journey!">
+  <!-----Estilos----->
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/bootstrap.css">
@@ -48,106 +53,36 @@
 
 
 
-  <div id="gallery" class="carousel slide" data-bs-inverval="false">
-    <h2 class="characters text-center">characters</h2>
-    <div id="myCarousel" class="carousel-inner" data-bs-inverval="false">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Joker()"><img class="imagen img-fluid mx-auto border" src="../assets/img/Joker Icon.jpg" alt="Image 1"/></a>
-          </div>
 
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Mona()"><img class=" imagen img-fluid mx-auto border" src="../assets/img/Mona Icon.jpg" alt="Image 2"/></a>
-          </div>
-
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Skull()"><img class=" imagen img-fluid mx-auto border" src="../assets/img/Skull Icon.jpg" alt="Image 3"/></a>
-          </div>
-
-          <div class="col-3">
-            <a href="#section-1" onclick="Panther()"><img class=" imagen img-fluid mx-auto border" src="../assets/img/Panther Icon.jpg" alt="Image 4"/></a>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Fox()"><img class="img-fluid mx-auto border" src="../assets/img/Fox Icon.jpg" alt="Image 5"/></a>
-          </div>
-
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Queen()"><img class="img-fluid mx-auto border" src="../assets/img/Queen Logo.png" alt="Image 6"/></a>
-          </div>
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Oracle()"><img class="img-fluid mx-auto border" src="../assets/img/Oracle Icon.jpg" alt="Image 7"/></a>
-          </div>
-
-          <div class="col-3 imagen">
-            <a href="#section-1" onclick="Noir()"><img class="img-fluid mx-auto border" src="../assets/img/Noir Logo.jpg" alt="Image 8"/></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#gallery" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-
-    <a class="carousel-control-next" href="#gallery" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-    
+  
+  <section class="characters-bg">
+  <h2 class="characters text-center">characters</h2>
   <div id="section-1" class="row">
-    <div class="col-md-6 my-5 order-first">
+    <div class="col-6 order-first">
+        <ul class="iconos">
+          <li class="child"><a href="#section-1" onclick="Joker()"><img class="img-fluid mx-auto border" src="../assets/img/Joker Icon.png" alt="Image 1"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Mona()"><img class="img-fluid mx-auto border" src="../assets/img/Mona Icon.png" alt="Image 2"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Skull()"><img class="img-fluid mx-auto border" src="../assets/img/Skull Icon.png" alt="Image 3"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Panther()"><img class="img-fluid mx-auto border" src="../assets/img/Panther Icon.png" alt="Image 4"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Fox()"><img class="img-fluid mx-auto border" src="../assets/img/Fox Icon.png" alt="Image 5"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Queen()"><img class="img-fluid mx-auto border" src="../assets/img/Queen Logo.png" alt="Image 6"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Oracle()"><img class="img-fluid mx-auto border" src="../assets/img/Oracle Icon.png" alt="Image 7"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Noir()"><img class="img-fluid mx-auto border" src="../assets/img/Noir Logo.png" alt="Image 8"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Sophie()"><img class="img-fluid mx-auto border" src="../assets/img/Sophie Icon.png" alt="Image 9"/></a></li>
+          <li class="child"><a href="#section-1" onclick="Wolf()"><img class="img-fluid mx-auto border" src="../assets/img/Wolf Icon.png" alt="Image 10"/></a></li>
+        </ul>
       <h2 id="codename" class="characters text-center">Codename:Joker</h2>
       <br>
-      <p class="descripcion animated wow fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia ut in rerum perferendis recusandae aperiam ab deserunt iure nemo esse repellendus dolorem fugit aliquid quam atque minus, reprehenderit soluta.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia ut in rerum perferendis recusandae aperiam ab deserunt iure nemo esse repellendus dolorem fugit aliquid quam atque minus, reprehenderit soluta.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia ut in rerum perferendis recusandae aperiam ab deserunt iure nemo esse repellendus dolorem fugit aliquid quam atque minus, reprehenderit soluta.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia ut in rerum perferendis recusandae aperiam ab deserunt iure nemo esse repellendus dolorem fugit aliquid quam atque minus, reprehenderit soluta.
+      <p id="descripcion" class="animated wow fadeInRight">
+        His Persona awakened in the midst of a series of psychotic-breakdown incidents. This lead to the creation of the ¨Phantom Thieves of Hearts¨, dedicated to changing the hearts of rotten adults and responsible for foiling a menacing conspiracy. Joker has high attack power and mobility, darting in with his dagger for quick close-range attacks.
       </p>
     </div>
 
-    <div class="col-md-6 my-5 order-last">
+    <div class="col-6 order-last">
       <img class="img-fluid animated wow fadeInUp" src="../assets/img/imgJoker.jpg" id="myImg">
     </div>
   </div>
-
-
-
-
-  <h2 class="titulo text-center animated wow fadeInRight my-5">But wait... there are more allies for our phantom thiefs this time!</h2>
-
-  <div class="container-fluid my-5">
-    <div class="row">
-      <div class="col-sm-6 d-flex justify-content-center">
-        <div class="card text-white w-50 bg-dark">
-          <img class="img-fluid card-img-top" src="../assets/img/Sophie Icon.png" alt="Card image cap">
-            <div class="card-body">
-              <h2 class="card-title titulo">Sophie</h2>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil veniam nemo, iusto porro magni ratione? Qui voluptas repellat nostrum sequi, eius non inventore labore voluptatum facere possimus omnis mollitia corrupti.</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-sm-6 d-flex justify-content-center">
-        <div class="card text-white w-50 bg-dark">
-          <img class="img-fluid card-img-top" src="../assets/img/imgWolf.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h2 class="card-title titulo">Zenkichi Hasegawa</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias laudantium eos ut numquam voluptates voluptas voluptatum unde neque quisquam ex magni provident, labore iusto eveniet ratione at. Sequi, nesciunt?</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
 
 
@@ -170,9 +105,19 @@
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-discord"></i></a>
         <!-- Section: Social media -->
       </section>  
+
+      <section class="footer mb-2">
+        <!-- Facebook -->
+        <a class="m-4" href="#!" role="button"><img src="../assets/img/ps4.png"></a>
+        <!-- Twitter -->
+        <a class="m-4" href="#!" role="button"><img src="../assets/img/platform_switch.png"></a>
+        <!-- Twitch -->
+        <a class="m-4" href="#!" role="button"><img src="../assets/img/steam.png"></a>
+      </section>
     </div>
     <!-- Grid container -->
     
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright: Fabrizio Hotkowicz Cassani
