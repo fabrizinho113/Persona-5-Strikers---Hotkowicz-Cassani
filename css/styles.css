@@ -7,7 +7,21 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: black; }
+  background-color: #000000; }
+
+h3 {
+  color: #FFFFFF; }
+
+p {
+  color: #FFFFFF; }
+
+ul {
+  list-style: none; }
+
+/*                 Footer                   */
+.footer img {
+  max-height: 100px;
+  max-width: 200px; }
 
 /* LOGO Y NAV */
 header {
@@ -48,107 +62,119 @@ header {
     background-color: transparent;
     transition: all .5s ease-in-out; }
   header .scroll {
-    background-color: #ffcd0d; }
+    background-color: #ffcd0d;
+    opacity: 0.9; }
 
-/* SECCIONES Y IMAGENES*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------Index.html-------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
 .titulo {
-  font-family: 'Smooch Sans';
-  color: white;
+  font-family: "Smooch Sans";
+  color: #FFFFFF;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #505050;
   font-size: 60px; }
 
 .rojo {
-  color: red; }
+  color: #8B0000; }
 
 .seccion {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/background-rojo.jpg");
   background-size: cover; }
+  .seccion img {
+    width: 100%;
+    height: auto; }
 
-.seccion-1 {
-  color: white;
-  font-family: 'Smooch Sans';
+.seccion-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/Body P5.jpg"); }
+
+.seccion-3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/background-home.jpg"); }
+
+.seccion-descripcion, .seccion-2, .seccion-3 {
+  color: #8B0000;
+  font-family: "Smooch Sans";
   font-size: 20px;
   margin-top: 0px; }
-
-.home-1 {
-  width: 100%;
-  height: auto; }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------characters.html--------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
 .characters-header {
-  height: 50vh;
+  height: 30vh;
   background-image: url("../assets/img/characters-banner.jpg");
   background-size: cover;
   background-position: center center; }
-
-#personajes {
-  margin-top: 20rem; }
-
-#myCarousel {
-  height: 100%;
-  width: 100%; }
-  #myCarousel .carousel-inner {
-    height: 100%; }
-  #myCarousel .carousel-item {
-    text-align: center; }
-  #myCarousel .parent {
-    min-height: 200px; }
-  #myCarousel .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px; }
-  #myCarousel .carousel-control-prev, #myCarousel .carousel-control-next {
-    width: 5%;
-    /*put your desired width*/
-    margin-top: 80px;
-    /*put your desired top margin*/ }
 
 .characters {
   font-family: 'Smooch Sans';
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 2px #505050;
-  font-size: 140px; }
+  font-size: 120px; }
 
-#section-1 {
-  margin-top: 10rem; }
-  #section-1 .descripcion {
-    color: white; }
-
-.card-img-top {
-  width: 100%;
-  height: auto; }
+.characters-bg {
+  background-image: url("../assets/img/characters_bg.jpg");
+  background-size: cover;
+  background-position: center center; }
+  .characters-bg #section-1 {
+    margin-top: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 100px; }
+    .characters-bg #section-1 #descripcion {
+      color: white;
+      font-size: 25px; }
+    .characters-bg #section-1 .iconos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .characters-bg #section-1 .child {
+      margin-top: 20px;
+      flex: 1 0 20%; }
+    .characters-bg #section-1 #myImg {
+      width: auto; }
 
 .media-header {
-  background-color: black;
-  height: 20vh; }
+  background-image: url("../assets/img/media-banner.jpg");
+  background-position: center center;
+  height: 40vh; }
 
-.imagen-media {
-  padding: 100px; }
+.media-bg {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/background-rojo.jpg"); }
+  .media-bg .imagen-media {
+    padding: 100px; }
+  .media-bg .imagen-media img {
+    width: 100%;
+    height: auto;
+    max-height: 900px; }
+  .media-bg .thumbnail {
+    margin-bottom: 50px; }
+  .media-bg .thumbnail li img {
+    height: 0px; }
+  .media-bg .videoGameplay {
+    width: 33%;
+    padding: 20px; }
+  .media-bg .spotify {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px; }
+    .media-bg .spotify iframe {
+      padding: 10px; }
 
-.imagen-media img {
-  width: 100%;
-  height: auto;
-  max-height: 900px; }
-
-.thumbnail {
-  margin-bottom: 80px; }
-
-.thumbnail li img {
-  height: 0px; }
-
-.videoGameplay {
-  width: 33%;
-  padding: 20px; }
+.store-header {
+  background-image: url(../assets/img/store-banner.jpg);
+  background-position: center center;
+  height: 40vh; }
 
 .tabla {
   background-color: #ffcd0d; }
+  .tabla img {
+    width: 40px;
+    height: 40px; }
 
 .plataform {
   margin-bottom: 300px; }
@@ -177,7 +203,16 @@ header {
     font-family: 'Smooch Sans';
     font-size: 60px; }
 
+.contact-header {
+  height: 40vh;
+  background-image: url("../assets/img/contact-banner.jpg");
+  background-size: cover;
+  background-position: center center; }
+
 #contacto {
+  background-image: url("../assets/img/background-rojo.jpg");
+  background-size: cover;
+  background-position: center center;
   font-family: 'Smooch Sans';
   padding: 10px 40px;
   color: white;
@@ -187,6 +222,9 @@ header {
     width: 100%; }
 
 #studio {
+  background-image: url("../assets/img/background-rojo.jpg");
+  background-size: cover;
+  background-position: center center;
   font-family: 'Smooch Sans';
   padding: 10px 40px;
   color: white;
@@ -195,6 +233,7 @@ header {
   #studio .responsive-map-container {
     position: relative;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
@@ -208,27 +247,106 @@ header {
       width: 100%;
       height: 100%; }
 
-.responsive-map-container {
-  position: relative;
-  margin-top: 40px;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden; }
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 10px; }
+    .footer img {
+      padding: 10px; }
+  .characters {
+    font-size: 80px; }
+  #section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #section-1 .child {
+      margin: 20px 20px; }
+    #section-1 #codename {
+      font-size: 40px; }
+    #section-1 #descripcion {
+      font-size: 12px; }
+  .media-bg .imagen-media {
+    padding: 30px; }
+    .media-bg .imagen-media img {
+      width: 100%;
+      height: auto;
+      max-height: 350px; }
+  .media-bg .thumbnail {
+    margin-bottom: 0px; }
+  .media-bg .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .media-bg .videos .videoGameplay {
+      width: 100%;
+      padding: 20px; }
+  .media-bg .spotify {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .media-bg .spotify iframe {
+      width: 500px;
+      height: 400px; } }
 
-.responsive-map-container iframe,
-.responsive-map-container object,
-.responsive-map-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   #nav {
     background-color: #ffcd0d; }
+    #nav li a {
+      color: black;
+      font-size: 25px; }
+  .video {
+    display: none; }
+  header {
+    background: url("../assets/img/Mobile.png");
+    background-size: cover; }
   .version {
+    font-size: 30px; }
+  #section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #section-1 #codename {
+      font-size: 50px; }
+    #section-1 #descripcion {
+      font-size: 10px; }
+    #section-1 .child {
+      margin: 5px 0px;
+      padding: 5px; }
+  .media-bg .imagen-media {
+    padding: 30px; }
+    .media-bg .imagen-media img {
+      width: 100%;
+      height: auto;
+      max-height: 350px; }
+  .media-bg .thumbnail {
+    margin-bottom: 0px; }
+  .media-bg .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(1%); }
+    .media-bg .videos .videoGameplay {
+      width: 100%;
+      padding: 20px; }
+  .media-bg .spotify {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .media-bg .spotify iframe {
+      width: 500px;
+      height: 400px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 140px; }
+    .videos .videoGameplay {
+      width: 100%;
+      padding: 20px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  #nav li {
     font-size: 30px; } }
 
 @media only screen and (max-width: 1199px) {

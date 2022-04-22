@@ -2,73 +2,57 @@
 /*-------------------------------characters.html--------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------*/
+@mixin flex-wrap-row-around{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 .characters-header{
-    height: 50vh;
+    height: 30vh;
     background-image: url('../assets/img/characters-banner.jpg');
     background-size: cover;
     background-position: center center;
 }
-
-#personajes {
-    margin-top: 20rem;
-}
-
-
-#myCarousel {
-    height: 100%;
-    width: 100%;
-
-    .carousel-inner {
-        height: 100%;
-    }
-      
-    .carousel-item {
-        text-align: center;
-    }
-      
-    .parent {
-        min-height: 200px;
-    }
-    
-    .carousel-inner > .item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 500px;
-    }
-    
-    
-    .carousel-control-prev, .carousel-control-next {
-        width: 5%;/*put your desired width*/
-        margin-top: 80px;/*put your desired top margin*/
-    }
-    
-}
-  
-  
-
-
 
 .characters {
     font-family: 'Smooch Sans';
     text-transform: uppercase;
     color: white;
     text-shadow: 2px 2px 2px rgb(80, 80, 80);
-    font-size: 140px;
+    font-size: 120px;
 }
 
-#section-1{
-    margin-top: 10rem;
+.characters-bg {
+    background-image: url('../assets/img/characters_bg.jpg');
+    background-size: cover;
+    background-position: center center;
 
-    .descripcion {
-        color: white;
-    }
+    #section-1{
+        margin-top: 2rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 100px;
     
+        #descripcion {
+            color: white;
+            font-size: 25px;
+        }
+    
+        .iconos {
+            @include flex-wrap-row-around;
+        }
+    
+        .child {
+            margin-top: 20px;
+            flex: 1 0 20%;
+          }
+        
+        #myImg {
+            width: auto;
+        }
+    }
 }
 
-.card-img-top{
-    width:100%;
-    height:auto;
-}

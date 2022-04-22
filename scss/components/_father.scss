@@ -1,11 +1,33 @@
+@import "components/variables";
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; }
+    padding: 0; 
+  }
   
   html {
-    scroll-behavior: smooth; }
+    scroll-behavior: smooth; 
+  }
   
   body {
-    background-color: black; }
+    background-color: map-get($colores, negro); 
+  }
+  
+  h3 {
+    color: map-get($colores, blanco);
+  }
+  p {
+    color: map-get($colores, blanco);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /*                 Footer                   */
+  .footer img{
+    max-height: 100px;
+    max-width: 200px;
+  }
   
