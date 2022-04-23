@@ -257,7 +257,8 @@ header {
     display: none; }
   header {
     background: url("../assets/img/Mobile.png");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center center; }
   .footer {
     padding: 10px; }
     .footer img {
@@ -307,7 +308,8 @@ header {
     display: none; }
   header {
     background: url("../assets/img/Mobile.png");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center center; }
   .version {
     font-size: 30px; }
   #section-1 {
