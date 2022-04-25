@@ -31,6 +31,13 @@
         width: 100%;
         height: auto;
     }
+
+    .seccion-descripcion {
+        color: map-get($colores, rojo);
+        font-family: map-get($fuente, Fuente);
+        font-size: 20px;
+        margin-top: 0px;
+    }
 }
 
 .seccion-2 {
@@ -53,12 +60,7 @@
     ,url('../assets/img/background-home.jpg');
 }
 
-.seccion-descripcion {
-    color: map-get($colores, rojo);
-    font-family: map-get($fuente, Fuente);
-    font-size: 20px;
-    margin-top: 0px;
-}
+
 
 
 
