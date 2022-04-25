@@ -85,18 +85,17 @@ header {
   .seccion img {
     width: 100%;
     height: auto; }
+  .seccion .seccion-descripcion, .seccion .seccion-2, .seccion .seccion-3 {
+    color: #8B0000;
+    font-family: "Smooch Sans";
+    font-size: 20px;
+    margin-top: 0px; }
 
 .seccion-2 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/Body P5.jpg"); }
 
 .seccion-3 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/background-home.jpg"); }
-
-.seccion-descripcion, .seccion-2, .seccion-3 {
-  color: #8B0000;
-  font-family: "Smooch Sans";
-  font-size: 20px;
-  margin-top: 0px; }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------characters.html--------------------------------------------------------------------------*/
