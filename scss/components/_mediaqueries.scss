@@ -1,8 +1,4 @@
-@mixin flex-column-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import "components/variables";
 
 @media only screen and (max-width: 576px){
 
@@ -123,10 +119,8 @@
     }
 
     #section-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        @include flex-column-center;
+        
         #codename {
             font-size: 50px;
         }
