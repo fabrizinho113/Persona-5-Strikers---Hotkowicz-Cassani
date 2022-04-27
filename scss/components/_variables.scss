@@ -11,3 +11,17 @@ $titulo: (
     tFuente: 60px,
 );
 
+/* Mixin */
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-wrap-row-around{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
