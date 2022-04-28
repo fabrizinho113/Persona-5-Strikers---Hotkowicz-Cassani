@@ -30,7 +30,7 @@
         }
 
         .characters {
-            font-size: 80px;
+            font-size: 60px;
         }
 
         #section-1 {
@@ -43,7 +43,7 @@
             }
 
             #codename {
-                font-size: 40px;
+                font-size: 20px;
             }
 
             #descripcion {
@@ -94,7 +94,7 @@
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 577px) and (max-width: 768px){
     #nav {
         background-color: #ffcd0d;
 

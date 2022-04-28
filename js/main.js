@@ -2,7 +2,7 @@ var myNav = $("#nav");
 
 $(window).on('scroll', function() {
   "use strict";
-  if ($(window).scrollTop() >= 500) {
+  if ($(window).scrollTop() >= 220) {
     myNav.addClass("scroll");
   } else {
     myNav.removeClass("scroll");
