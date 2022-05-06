@@ -201,7 +201,8 @@ header {
     padding: 10px 40px;
     color: white;
     background-color: transparent;
-    font-weight: bold; }
+    font-weight: bold;
+    border-color: white; }
   .fondoStore .buy button {
     font-family: 'Smooch Sans';
     padding: 10px 40px;
